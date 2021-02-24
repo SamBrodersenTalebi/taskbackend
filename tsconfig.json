@@ -1,0 +1,22 @@
+/*
+target: tells which ECMAScript to use 
+outDir: compiled code location
+module: use commonjs module in the compiled code (require instead of import)
+strict: noImplicitAny, noImplicitThis, alwaysStrict, strictBindCallApply, strictNullChecks, strictFunctionTypes and strictPropertyInitialization
+noFallthroughCasesInSwitch: ensures that a switch case, each case ends either with a returnor a breakstatement.
+esModuleInterop: allows interoperability between CommonJS and ES Modules
+*/
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "./build/",
+    "module": "commonjs",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}
