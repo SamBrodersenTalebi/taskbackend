@@ -8,6 +8,10 @@ router.get('/averagePrice', (_req, res) => {
   res.send({ averagePrice: price });
 });
 
+router.get('/topcars', (_req, res) => {
+  res.send(contactService.mostContacted());
+});
+
 router.post('/', (_req, res) => {
   res.send('Saving a auto!');
 });

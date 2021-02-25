@@ -34,3 +34,17 @@ export interface Distribution {
   make: string;
   distribution: number;
 }
+
+export interface CarInfo {
+  id: string;
+  make: string;
+  price: string;
+  mileage: string;
+  seller_type: Seller;
+  count: number;
+}
+
+export interface mostContactedCars {
+  carInfo: Array<CarInfo>;
+  date: string;
+}
