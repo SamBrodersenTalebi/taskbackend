@@ -26,4 +26,4 @@ Access the resources by hitting the URL endpoints which can be found inside of t
 
 ### Testing:
 
-I have only tested on the frontend. I haven't done that much testing in my career so far. I could do it but I think I have exceed the recommended time you should spend on the task. But I hope it's okay!
+I have only tested the frontend. I haven't done that much testing in my career so far. I could do it but I think I have exceeded the recommended time you should spend on the task. But I hope it's okay!
