@@ -1,6 +1,5 @@
 import express from 'express';
 import listingService from '../services/listingService';
-
 const router = express.Router();
 
 router.get('/averageprice', (_req, res) => {

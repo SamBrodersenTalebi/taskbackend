@@ -11,7 +11,6 @@ const getEntries = (): Array<ContactEntry> => {
 };
 
 const averagePrice = (percentage: number): number => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const object: any = {};
   const length: number = contractEntries.length;
   for (let i = 0; i < length; i++) {
@@ -52,13 +51,11 @@ const mostContacted = (): Array<mostContactedCars> => {
       obj[date] = [{ id: id, count: 1 }];
     } else {
       // Date already exist for the contact id.
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       const index = obj[date].findIndex(
         (item: { id: number }) => item.id === id
       );
       // No index was found
       if (index === -1) {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-call
         obj[date].push({ id: id, count: 1 });
       } else {
         obj[date][index].count += 1;

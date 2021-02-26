@@ -76,6 +76,7 @@ const getDistribution = (): Array<Distribution> => {
     const percentage: number = amount / listingEntries.length;
     distribution.push({ make: key, distribution: percentage });
   }
+
   return distribution;
 };
 
